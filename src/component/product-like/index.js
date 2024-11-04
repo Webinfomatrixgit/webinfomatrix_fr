@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './index.css';
 import Productcard from '../Product-card';
 
@@ -11,12 +12,12 @@ function Productlike() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('http://34.207.92.172:3000/api/product');
-                if (!response.ok) {
+                const response = await axios.get('http://34.207.92.172:3000/api/product');
+                if (!response.statusText === 'OK') {
                     throw new Error('Network response was not ok');
                 }
-                const data = await response.json();
-                setProducts(data.response); // Assuming data is an array of products
+                
+                setProducts(response.data.response.products); // Assuming data is an array of products
             } catch (error) {
                 setError(error.message);
             } finally {
@@ -41,7 +42,7 @@ function Productlike() {
                 
             </div>
             <div className='product-like-card-bg-container'>
-                {products.products.map(product => (
+                {products.map(product => (
                     <Productcard key={product.id} product={product} />
                 ))}
             </div>

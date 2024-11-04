@@ -1,0 +1,116 @@
+.nav-bg-container {
+    background-color: #343a40; /* Dark background */
+    padding-left: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.link:hover{
+    text-decoration: none;
+    color: #ffc107;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-toggle-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: white; /* White text */
+    font-size: 24px; /* Larger font for the icon */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Navigation links */
+.header-search-and-link-container {
+    display: none; /* Hide by default for mobile */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.header-search-and-link-container.open {
+    display: flex; /* Show when open */
+}
+
+.header-link-container {
+    display: flex; /* Stack links vertically on mobile */
+    flex-direction: column;
+    margin-top: 10px; /* Space between search and links */
+}
+
+.header-link {
+    cursor: pointer;
+    padding: 10px 0; /* Spacing around links */
+    transition: color 0.3s;
+    color: white; /* Link color */
+}
+
+.header-link:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+.header-search-input-container {
+    display: flex;
+    margin-top: 10px; /* Space above the search */
+}
+
+/* Styles for input and button */
+.header-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.header-search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffc107;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-search-button:hover {
+    background-color: #e0a800; /* Darker shade on hover */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .nav-bg-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-search-and-link-container {
+        display: flex; /* Show links on larger screens */
+        flex-direction: row; /* Align links horizontally */
+        align-items: center; /* Center items */
+        justify-content: space-between;
+        width: 60vw;
+    }
+
+    .header-link-container {
+        flex-direction: row; /* Align links in a row */
+        margin-left: 20px; /* Space between search and links */
+        justify-content: space-between;
+        width: 25vw;
+        margin-right: 30px;
+    }
+
+    .header-toggle-button {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}

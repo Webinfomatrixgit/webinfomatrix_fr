@@ -1,0 +1,84 @@
+.footer-bg-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.footer-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.whatsapp-logo {
+    font-size: 40px;
+    color: #ffffff;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: hsl(142, 77%, 29%);
+    margin-top: 20px;
+}
+
+.LinkedinIn-logo {
+    font-size: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #0072b1;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+.link{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer-main-heading {
+    font-size: 25px;
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-list-container {
+    text-align: left;
+}
+
+.footer-unorder-list-container {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.footer-list-heading {
+    font-size: 20px;
+    color: #ffc107;
+}
+
+@media (min-width: 768px) {
+    .footer-main-container {
+        flex-direction: row;
+    }
+
+    .footer-content-container {
+        flex-direction: row;
+    }
+
+    .whatsapp-logo {
+        margin-top: 0px;
+
+    }
+
+    .LinkedinIn-logo {
+        margin-top: 0px;
+    }
+}

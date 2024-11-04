@@ -1,0 +1,42 @@
+.product-like-bg-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; /* Adjusted for smaller screens */
+    padding-right: 20px; /* Adjusted for smaller screens */
+    margin-top: 30px;
+}
+
+.product-like-main-heading {
+    font-size: 20px; /* Adjusted for smaller screens */
+}
+
+.product-like-view-all-button{
+    border-style: none;
+    font-size: 15px;
+    color: blue;
+    font-weight: 600;
+
+}
+
+.product-like-card-bg-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+@media (min-width: 768px) {
+    .product-like-bg-container {
+        padding-left: 40px; /* Original styles for larger screens */
+        padding-right: 40px; /* Original styles for larger screens */
+    }
+
+    .product-like-main-heading {
+        font-size: 25px; /* Original font size for larger screens */
+    }
+
+    .product-like-card-bg-container {
+        flex-direction: row; /* Change to row layout on larger screens */
+    }
+}

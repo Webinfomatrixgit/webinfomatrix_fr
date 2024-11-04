@@ -1,0 +1,27 @@
+/* ProductPage.css */
+.product-page {
+    padding: 20px;
+}
+.all-product-main-heading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

@@ -4,6 +4,7 @@ import Banner from '../banner';
 import Productlike from '../product-like';
 
 const Home = () => {
+
     return (
         <div>
             <Productlike/>

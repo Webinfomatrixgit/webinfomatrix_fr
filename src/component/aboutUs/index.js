@@ -44,14 +44,14 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className='about-us-who-bg-container'>
-                <div data-aos="fade-right">
+                <div data-aos="fade-left">
                     <img
                         src='https://corporate.indiamart.com/wp-content/uploads/2024/09/what-we-do.png'
                         className='about-us-corporate-image'
                         alt='webinfomatrix'
                     />
                 </div>
-                <div data-aos="fade-left"  className='about-us-who-content-container'>
+                <div data-aos="fade-right"  className='about-us-who-content-container'>
                     <h1 className='about-us-who-main-heading'>WHAT <br /> we do</h1>
                     <p>
                         With a focus on digital and financial inclusion, we empower businesses of all sizes by providing seamless access to a vast digital marketplace. Our platform allows suppliers to begin their online journey effortlessly, offering a comprehensive suite of tools and services designed to help them grow and succeed.
@@ -66,20 +66,16 @@ const AboutUs = () => {
                         <p>Buyers can easily explore a wide range of products and connect with verified suppliers, finding everything they need-from pins to planes-on a single platform.</p>
                     </div>
                 </div>
-
-                
-
-
             </div>
             <div className='about-us-who-bg-container'>
-                <div data-aos="fade-right" className='about-us-who-content-container'>
+                <div data-aos="fade-left" className='about-us-who-content-container'>
                     <h1 className='about-us-who-main-heading'>Who <br /> we are</h1>
                     <p>
                         We are India's largest marketplace and a one-stop expert solution for all business needs, empowering 81 lakh suppliers by connecting them with ~20 crore buyers across the nation. <br />
                         At the heart of IndiaMART is our commitment to creating value for Indian business communities through strong network effects. We make business effortless for all by ensuring access to a wider market, technology, and finance.
                     </p>
                 </div>
-                <div data-aos="fade-left">
+                <div data-aos="fade-right">
                     <img
                         src='https://corporate.indiamart.com/wp-content/uploads/2024/09/how-we-do-it.png'
                         className='about-us-corporate-image'

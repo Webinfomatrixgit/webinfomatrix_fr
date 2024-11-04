@@ -13,6 +13,7 @@ function Productlike() {
         const fetchProducts = async () => {
             try {
                 const response = await axios.get('http://34.207.92.172:3000/api/product');
+                console.log(response)
                 if (!response.statusText === 'OK') {
                     throw new Error('Network response was not ok');
                 }

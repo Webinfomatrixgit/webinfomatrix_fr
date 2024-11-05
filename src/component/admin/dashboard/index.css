@@ -1,0 +1,36 @@
+.dashboard-bg-container{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.dashboard-main-heading{
+    font-size: 20px;
+}
+
+.company-profile-card-container{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.conpany-profile-bg-container{
+    background-color: #64b698;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.dashboard-content-heading{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dashboard-persion-detail-container{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}

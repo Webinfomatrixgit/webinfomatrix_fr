@@ -1,0 +1,24 @@
+.profile-bg-container{
+    width: 50vw;
+}
+
+.profile-main-heading{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.profile-content-container{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -23px;
+}
+
+.profile-menu:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.display-none{
+    display: none;
+}

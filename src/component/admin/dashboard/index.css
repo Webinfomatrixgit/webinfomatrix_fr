@@ -6,6 +6,25 @@
     margin-bottom: 40px;
 }
 
+.dashboard-side-bar-container{
+    width: 326px;
+    height: 100vh;
+    border-right: 5px solid #fff;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    margin-top: -40px;
+    margin-left: -96px;
+    padding-left: 24px;
+}
+
+
+.side-menu:hover{
+    color: #ffc107;
+    cursor: pointer;
+}
+
 .dashboard-main-heading{
     font-size: 20px;
 }
@@ -27,10 +46,16 @@
 .dashboard-content-heading{
     font-size: 20px;
     font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .dashboard-persion-detail-container{
     display: flex;
     justify-content: space-between;
     width: 20vw;
+}
+
+.display-none{
+    display: none;
 }

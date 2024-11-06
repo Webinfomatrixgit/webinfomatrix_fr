@@ -1,9 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import './index.css'
 import Cookies from 'js-cookie';
+import Profile from '../profile';
 
 const Dashboard = () => {
     const [jwt, setJwt] = useState(null)
+    const [activeProfile, setProfile] = useState(false)
+    const [activeDashboard, setDashboard] = useState(true)
+
+    const profileSection = () => {
+        setProfile(true)
+        setDashboard(false)
+            
+        
+    }
+
+    const dashboardSection = () => {
+        setDashboard(true)
+        setProfile(false)
+    }
+
+    console.log(activeProfile,'activeProfile')
 
     // Fetch the JWT token when the component mounts
     useEffect(() => {
@@ -15,17 +32,21 @@ const Dashboard = () => {
         }
     }, []);  // Empty dependency array ensures this runs once after initial render
 
+    const profileClass = activeProfile ? '' : 'display-none';
+    const dashboardClass = activeDashboard ? '' : 'display-none';
+
     return (
         <div className='dashboard-bg-container'>
-            <div>
-                <p>Profile</p>
-                <p>Products / Services</p>
-                <p>Add New Product/Service</p>
-                <p>Buy Leads</p>
-                <p>Premium Services</p>
-                <p>Settings</p>
+            <div className='dashboard-side-bar-container'>
+                <p className='side-menu' onClick={dashboardSection}>Dashboard</p>
+                <p className='side-menu' onClick={profileSection}>Profile</p>
+                <p className='side-menu'>Products / Services</p>
+                <p className='side-menu'>Add New Product/Service</p>
+                <p className='side-menu'>Buy Leads</p>
+                <p className='side-menu'>Premium Services</p>
+                <p className='side-menu'>Settings</p>
             </div>
-            <div>
+            <div className = {dashboardClass}>
                 <h1 className='dashboard-main-heading'>My Dashboard</h1>
                 <div>
                     <h1 className='dashboard-content-heading'>Company Profile</h1>
@@ -59,6 +80,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <Profile className={profileClass} />
         </div>
     )
 }
